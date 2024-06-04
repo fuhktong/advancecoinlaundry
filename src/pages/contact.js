@@ -1,5 +1,5 @@
 import React from 'react';
-import { LogoOnly, SocialMediaBar } from '../sections';
+import { DividerWhite, LogoOnly, SocialMediaBar } from '../sections';
 import ContactForm from './contactform.js';
 import '../sections.css';
 import './contactform.css';
@@ -10,6 +10,7 @@ const Contact = () => {
       <LogoOnly />
       <SocialMediaBar />
       <ContactForm />
+      <DividerWhite />
     </section >
   );
 };
