@@ -1,0 +1,6 @@
+:root {
+    background-color: white;
+    color: white;
+    font-family: Avenir Next, Futura;
+    --text-dropshadow: 1px 1px 1px black;
+}

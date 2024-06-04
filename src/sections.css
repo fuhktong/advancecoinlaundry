@@ -1,0 +1,415 @@
+/* socialmediabar */
+
+.socialmediabar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.socialmediabar img {
+    width: 30px;
+    height: auto;
+    padding: 15px;
+}
+
+/* logoonly */
+
+.logoonly {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 150px 0 80px 0;
+}
+
+.logoonly-img {
+    margin: auto;
+    max-width: 70%;
+}
+
+.logoonly img {
+    max-width: 100%;
+}
+
+/* divider */
+.dividerwhite {
+    display: flex;
+    width: 70%;
+    height: 3px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.dividerf5f4f0 {
+    display: flex;
+    width: 70%;
+    height: 3px;
+    margin: 20px auto;
+    background-color: #f5f4f0;
+    border-radius: 5px;
+}
+
+.spacedivider {
+    height: 400px;
+    background-color: aqua;
+}
+
+/* homemain */
+
+.homemainlogo {
+    display: flex;
+    flex-direction: column;
+}
+
+.homemainlogo-img {
+    text-align: center;
+}
+
+.homemainlogo-img img {
+    margin-top: 100px;
+    max-width: 70%;
+    height: auto;
+}
+
+.homemainlogo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.homemainlogo-text-h2 {
+    text-align: center;
+    font-size: 35px;
+    margin: 0 15% 20px 15%;
+}
+
+.homemainlogo-text-p {
+    text-align: center;
+    font-size: 15px;
+    margin: 0 15%;
+
+}
+
+/* sectiontemplate */
+
+.sectiontemplate {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px 10px;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+.sectiontemplate-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.sectiontemplate-text-h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.sectiontemplate-text-h1 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.sectiontemplate-text-p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.sectiontemplate-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.sectiontemplate-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .sectiontemplate {
+        flex-direction: column;
+        padding-right: 50px;
+    }
+    
+    .sectiontemplate-text, .sectiontemplate-img {
+        flex: none;
+        width: 100%;
+    }
+    
+    .sectiontemplate-img {
+        margin-top: 20px;
+    }
+    
+}
+
+/* homevideo */
+
+.homevideo {
+    text-align: center;
+    padding: 0 20%;
+    padding: 20px;
+    background-color: #f5f4f0;
+}
+
+.homevideo-h2 {
+    padding-bottom: 20px;
+    font-size: xx-large;
+}
+
+.homevideo-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.homevideo-container iframe {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+/* archive */
+
+.archive {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 70px;
+    padding: 10px 0;
+}
+
+.archive-dates {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+
+.archive-months {
+    display: flex;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: var(--text-dropshadow);
+    padding-top: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+.archive-title {
+    display: flex;
+    text-shadow: var(--text-dropshadow);
+    padding: 20px 0;
+    width: 100%;
+    text-align: left;
+}
+
+/* book */
+
+.amazonlink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 320px;
+    height: 50px;
+    background-color:#45698c;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px black;
+    font-size: 25px;
+}
+
+.amazon a:hover {
+    text-decoration: none;
+}
+
+/* contact */
+
+.send-message {
+    color: #45698c;
+    text-decoration: none;
+    text-align: center;
+    font-size:xx-large;
+    font-style: italic;
+    font-weight: bolder;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-shadow: 1px 1px 1px gainsboro;
+    background-color: white;
+}
+
+/* contribute */
+
+.contribute {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px 10px;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+.contribute-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.contribute-text-h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contribute-text-h1 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.contribute-text-p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.contribute-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contribute-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-tshirt {
+    background-color: #45698c; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 180px;
+}
+
+.btn-tshirt:hover {
+    background-color: #3a5977; /* Darker green */
+}
+
+.btn-tshirt:active {
+    background-color: #45698c;
+    transform: translateY(2px);
+}
+
+.contribute-merch {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #f5f4f0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* electorstext */
+
+.electorslogo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    background-color: #45698c;
+}
+
+.electorslogo img {
+    max-height: 80%;
+    max-width: 80%;
+    height: auto;
+}
+
+/* electorskeypoints */
+
+.electorskeypoints {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 90px 10px;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+.electorskeypoints-text {
+    flex: 1;
+    padding: 20px;
+}
+
+/* hamilton */
+
+.hamilton-logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    background-color: #45698c;
+}
+
+.hamilton-logo img {
+    max-height: 80%;
+    max-width: 80%;
+    height: auto;
+}
+
+/* repvsdem */
+
+.repvsdem-logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    background-color: #45698c;
+}
+
+.repvsdem-logo img {
+    max-height: 80%;
+    max-width: 80%;
+    height: auto;
+}
