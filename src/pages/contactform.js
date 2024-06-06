@@ -2,81 +2,83 @@ import React, { useState } from 'react';
 import './contactform.css';
 
 const ContactForm = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value
-        });
-    };
+  const [responseMessage, setResponseMessage] = useState('');
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        const response = await fetch('/send', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-        });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
-        if (response.ok) {
-            alert('Message sent!');
-            setFormData({ name: '', email: '', message: '' });
-        } else {
-            alert('Failed to send message.');
-        }
-    };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-    return (
-        <div className="contact">
-            <form onSubmit={handleSubmit}>
-                <ul>
-                    <li>
-                        <label htmlFor="name">Name:</label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            required
-                        />
-                    </li>
-                    <li>
-                        <label htmlFor="email">Email:</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            required
-                        />
-                    </li>
-                    <li>
-                        <label htmlFor="message">Message:</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            value={formData.message}
-                            onChange={handleChange}
-                            required
-                        />
-                    </li>
-                    <li className="button">
-                        <button type="submit">Send</button>
-                    </li>
-                </ul>
-            </form>
-        </div>
-    );
+    try {
+      const response = await fetch('http://framersmethod.com/contactform.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(formData).toString(),
+      });
+
+      const result = await response.json();
+      setResponseMessage(result.message);
+    } catch (error) {
+      console.error('Error submitting the form:', error);
+      setResponseMessage('An error occurred while sending your message.');
+    }
+  };
+
+  return (
+    <div className="contact">
+      <form onSubmit={handleSubmit}>
+        <ul>
+          <li>
+            <label htmlFor="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </li>
+          <li>
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </li>
+          <li>
+            <label htmlFor="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
+          </li>
+          <li className='button'>
+            <button type="submit">Send</button>
+          </li>
+        </ul>
+      </form>
+      {responseMessage && <p>{responseMessage}</p>}
+    </div>
+  );
 };
 
 export default ContactForm;
