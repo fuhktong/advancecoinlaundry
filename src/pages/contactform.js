@@ -9,6 +9,7 @@ const ContactForm = () => {
   });
 
   const [responseMessage, setResponseMessage] = useState('');
+  const [responseStatus, setResponseStatus] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -28,15 +29,20 @@ const ContactForm = () => {
       });
 
       const result = await response.json();
+      setResponseStatus(result.status);
       setResponseMessage(result.message);
     } catch (error) {
       console.error('Error submitting the form:', error);
+      setResponseStatus('error');
       setResponseMessage('An error occurred while sending your message.');
     }
   };
 
   return (
     <div className="contact">
+      <div className="contactform-send-message">
+        Send a message to the Framers' Method:
+      </div>
       <form onSubmit={handleSubmit}>
         <ul>
           <li>
@@ -76,7 +82,11 @@ const ContactForm = () => {
           </li>
         </ul>
       </form>
-      {responseMessage && <p>{responseMessage}</p>}
+      {responseMessage && (
+        <p className={responseStatus === 'success' ? 'success' : 'error'}>
+          {responseMessage}
+        </p>
+      )}
     </div>
   );
 };

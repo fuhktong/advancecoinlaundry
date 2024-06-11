@@ -1,5 +1,6 @@
 import './global.css';
 import { Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Header from './Header.js';
 import Footer from './Footer.js';
 import Home from './pages/home.js'
@@ -13,9 +14,18 @@ import FAQ from './pages/faq.js';
 import Contribute from './pages/contribute.js';
 import Contact from './pages/contact.js';
 import Video001 from './newssource/video001.js'
+import Video002 from './newssource/video002.js'
+import Video003 from './newssource/video003.js'
+import Video004 from './newssource/video004.js'
+import Video005 from './newssource/video005.js'
+import Video006 from './newssource/video006.js'
+import Video007 from './newssource/video007.js'
+
+const helmetContext = {};
 
 const App = () => {
   return (
+    <HelmetProvider context={helmetContext}>
     <div>
       <Header />
         <Routes>
@@ -30,9 +40,16 @@ const App = () => {
           <Route path="contribute" element={<Contribute />} />
           <Route path="contact" element={<Contact />} />
           <Route path="video001" element={<Video001 />} />
+          <Route path="video002" element={<Video002 />} />
+          <Route path="video003" element={<Video003 />} />
+          <Route path="video004" element={<Video004 />} />
+          <Route path="video005" element={<Video005 />} />
+          <Route path="video006" element={<Video006 />} />
+          <Route path="video007" element={<Video007 />} />
         </Routes>
       <Footer />
     </div>
+    </HelmetProvider>
   );
 };
 

@@ -1,11 +1,12 @@
 .contact {
     background-color: white;
     margin: 0;
-    height: 500px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 form {
@@ -65,4 +66,28 @@ button {
     margin-left: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: none;
+}
+
+.contactform-send-message {
+    background-color: white;
+    color: #45698c;
+    text-decoration: none;
+    text-align: center;
+    font-size:xx-large;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: Avenir Next, Futura;
+    text-shadow: 1px 1px 1px rgb(172, 172, 172);
+}
+
+.success {
+    color: black;
+    font-weight: bold;
+    padding-top: 20px;
+}
+  
+.error {
+    color: black;
+    font-weight: bold;
+    padding-top: 20px;
 }

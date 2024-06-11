@@ -1,10 +1,29 @@
 import React from 'react';
 import './faq.css';
 import { DividerWhite } from '../sections';
+import { Helmet } from 'react-helmet-async';
 
 const FAQ = () => {
   return (
     <div id="header" class="main">
+      <Helmet>
+        <title>The Framers' Method - Frequently Asked Questions</title>
+        <meta name="description" content="Find the answers to frequently asked questions about the Electoral College." />
+        <meta name="keywords" content="electoral college, presidential elections, american politics, electors, electoral votes, president, constitution" />
+        <meta name="author" content="Dustin Taylor" />
+        <meta name="robots" content="index, follow"></meta>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+        <meta name="language" content="English"></meta>
+        <meta property="og:title" content="The Framers' Method - Frequently Asked Questions" />
+        <meta property="og:description" content="Find the answers to frequently asked questions about the Electoral College." />
+        <meta property="og:image" content="https://www.framersmethod.com/framers%20method%20tshirt.png" />
+        <meta property="og:url" content="https://www.framersmethod.com/faq" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="The Framers' Method - Frequently Asked Questions" />
+        <meta name="twitter:description" content="Find the answers to frequently asked questions about the Electoral College." />
+        <meta name="twitter:image" content="https://www.framersmethod.com/framers%20method%20tshirt.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
         <DividerWhite />
         <h1 class="faq-h1">Frequently Asked Questions</h1>
         <DividerWhite />

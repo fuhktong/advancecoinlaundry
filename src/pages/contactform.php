@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Email configuration
-    $to = "dustint505@gmail.com"; // Replace with your email address
+    $to = "info@framersmethod.com"; // Replace with your email address
     $subject = "New Contact Form Submission";
     $headers = "From: " . $email . "\r\n" .
                "Reply-To: " . $email . "\r\n" .

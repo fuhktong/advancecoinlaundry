@@ -52,7 +52,6 @@
 
 .spacedivider {
     height: 400px;
-    background-color: aqua;
 }
 
 /* homemain */
@@ -195,14 +194,15 @@
     text-align: center;
     font-weight: bold;
     font-style: italic;
-    font-size: 70px;
+    font-size: 55px;
     padding: 10px 0;
+    text-shadow: var(--text-dropshadow);
 }
 
 .archive-dates {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 68%;
     margin: auto;
 }
 
