@@ -1,12 +1,9 @@
 import React from 'react';
-import ContactForm from './contactform.js';
-import AdvanceMap from './advancemap.js';
-import '../sections.css';
-import './contactform.css';
-import { Footer2 } from '../sections';
+import '../sections';
+import { Washfold, Footer2, DividerWhite } from '../sections';
 import { Helmet } from 'react-helmet-async';
 
-const Contact = () => {
+const WashFold = () => {
   return (
     <section>
       <Helmet>
@@ -27,12 +24,26 @@ const Contact = () => {
         <meta name="twitter:image" content="https://www.advancecoinlaundry.com/public/advance_coin_laundry_logo_2.png" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-      <div style={{height: "120px"}}></div>
-      <ContactForm />
-      <AdvanceMap />
+      <Washfold />
+      <div style={{height: "30px"}}></div>
+      <h1 className="washfold-h1-title">Let our dependable team take care of your laundry needs.</h1>
+      <div style={{height: "50px"}}></div>
+      <p className="washfold-p">Is your busy schedule making it hard to find time for laundry? Let Advance Coin Laundry take care of this essential chore for you! We offer same-day wash and fold services at competitive prices and can handle everything from jeans and shirts to comforters and pet beds!</p>
+      <div style={{height: "20px"}}></div>
+      <p className="washfold-p">Rugs, pet beds, comforters, and heavy blankets should always be washed in a commercial facility. Visit us for all your washing and drying needs!</p>
+      <div style={{height: "50px"}}></div>
+      <DividerWhite />
+      <h1 className="washfold-h1-title">Wash & Fold Pricing (Minimum Services - $15.00)</h1>
+      <div style={{height: "20px"}}></div>
+      <p className="washfold-p">Two+ day service - $2.15 per pound</p>
+      <p className="washfold-p">Next-day service - $2.40 per pound</p>
+      <p className="washfold-p">Same-day service - $3.00 per pound</p>
+      <p className="washfold-p">Dry and fold service - $1.60 per pound</p>
+      <p className="washfold-p">Pressing is available upon request</p>
+      <div style={{height: "100px"}}></div>
       <Footer2 />
-    </section >
+    </section>
   );
 };
 
-export default Contact;
+export default WashFold;

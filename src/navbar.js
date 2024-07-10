@@ -5,19 +5,17 @@ const NavBar = () => {
   return (
     <nav className="nav-bar">
       <ul>
-        <li><Link to="/news">News</Link></li>
+        <li><Link to="/about">ABOUT</Link></li>
         <li>
-          <div id="reforms">Reforms</div>
+          <div id="services">SERVICES</div>
           <div className="dropdown-content">
-            <Link to="/repvsdem">Republic vs Democracy</Link>
-            <Link to="/hamilton">Hamilton Method</Link>
-            <Link to="/electors">Electors Convention</Link>
+            <Link to="/coinmachine">COIN-OPERATED MACHINES</Link>
+            <Link to="/washfold">WASH & FOLD</Link>
+            <Link to="/dryclean">DRY CLEANING</Link>
           </div>
         </li>
-        <li><Link to="/book">Book</Link></li>
-        <li><Link to="/faq">FAQ</Link></li>
-        <li><Link to="/contribute">Contribute</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/speedqueen">SPEED QUEEN APP</Link></li>
+        <li><Link to="/contact">CONTACT</Link></li>
       </ul>
     </nav>
   );

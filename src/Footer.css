@@ -1,7 +1,10 @@
 footer {
-    background-color: #45698c;
-    color: white;
+    background-image: url(/public/bubbles7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 20px 0 20px 20px;
+    color: white;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -75,6 +78,7 @@ footer h2 {
 
 @media screen and (max-width: 768px) {
     h2 {
+        margin-top: 0;
         padding-top: 25px;
         text-align: center;
     }

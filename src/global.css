@@ -1,6 +1,12 @@
 :root {
-    background-color: white;
+    background-image: #9fccd2;
     color: white;
     font-family: Avenir Next, Futura;
-    --text-dropshadow: 1px 1px 1px black;
+    --text-dropshadow: 1px 1px 1px grey;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
 }

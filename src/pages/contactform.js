@@ -20,7 +20,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://framersmethod.com/contactform.php', {
+      const response = await fetch('http://advancecoinlaundry.com/contactform.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
@@ -31,6 +31,15 @@ const ContactForm = () => {
       const result = await response.json();
       setResponseStatus(result.status);
       setResponseMessage(result.message);
+
+      if (result.status === 'success') {
+        setFormData({
+          name: '',
+          email: '',
+          message: '',
+        });
+      }
+
     } catch (error) {
       console.error('Error submitting the form:', error);
       setResponseStatus('error');
@@ -41,7 +50,7 @@ const ContactForm = () => {
   return (
     <div className="contact">
       <div className="contactform-send-message">
-        Send a message to the Framers' Method:
+        Send a message to Advance Coin Laundry:
       </div>
       <form onSubmit={handleSubmit}>
         <ul>

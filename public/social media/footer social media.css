@@ -1,0 +1,39 @@
+/* social media links
+
+<div className="footer-social-media">
+    <a href="" target="_blank" rel="noreferrer">
+        <img src="/white logo insta.png" alt="Advance Coin Laundry" />
+    </a>
+    <a href="" target="_blank" rel="noreferrer">
+        <img src="/white logo x.png" alt="Advance Coin Laundry" />
+    </a>
+    <a href="" target="_blank" rel="noreferrer">
+        <img src="/white logo youtube.png" alt="Advance Coin Laundry" />
+    </a>
+    <a href="" target="_blank" rel="noreferrer">
+        <img src="/white logo patreon.png" alt="Advance Coin Laundry" />
+    </a>
+    <a href="" target="_blank" rel="noreferrer">
+        <img src="/white logo tiktok.png" alt="Advance Coin Laundry" />
+    </a>
+</div>
+
+*/
+
+/* add this link to footer and rearrange 
+
+<li><Link className="link2" to="/reviews">REVIEWS</Link></li>
+
+*/
+
+/* add to navbar
+
+<li><Link to="/reviews">REVIEWS</Link></li>
+
+*/
+
+/* add to mobile bar 
+
+<li><Link className="link2" to="/reviews">REVIEWS</Link></li>
+
+*/

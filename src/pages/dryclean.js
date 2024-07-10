@@ -1,12 +1,9 @@
 import React from 'react';
-import ContactForm from './contactform.js';
-import AdvanceMap from './advancemap.js';
 import '../sections.css';
-import './contactform.css';
-import { Footer2 } from '../sections';
+import { Dryclean, Footer2 } from '../sections';
 import { Helmet } from 'react-helmet-async';
 
-const Contact = () => {
+const Electors = () => {
   return (
     <section>
       <Helmet>
@@ -27,12 +24,19 @@ const Contact = () => {
         <meta name="twitter:image" content="https://www.advancecoinlaundry.com/public/advance_coin_laundry_logo_2.png" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-      <div style={{height: "120px"}}></div>
-      <ContactForm />
-      <AdvanceMap />
+      <Dryclean />
+      <div style={{height: "30px"}}></div>
+      <h1 className="washfold-h1-title">Meeting Your High Standards for Dry Cleaning</h1>
+      <div style={{height: "50px"}}></div>
+      <p className="washfold-p">Do you have clothes that need dry cleaning? Count on Advance Coin Laundry to assist you. While we don't handle dry cleaning ourselves, we partner with the best local dry cleaners who meet your high standards for quality.</p>
+      <div style={{height: "20px"}}></div>
+      <p className="washfold-p">Just drop off your clothes anytime during the week, and we'll take care of delivering and retrieving them from the dry cleaners on either Tuesday or Thursday, whichever comes first. Our locally owned, family, and veteran-operated business aims to be your one-stop solution for all your laundry needs!</p>
+      <div style={{height: "20px"}}></div>
+      <p className="washfold-p">To learn more about this convenient option, please contact us today.</p>
+      <div style={{height: "50px"}}></div>
       <Footer2 />
-    </section >
+    </section>
   );
 };
 
-export default Contact;
+export default Electors;

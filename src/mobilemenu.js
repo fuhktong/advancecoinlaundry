@@ -33,15 +33,13 @@ const MobileMenu = () => {
           <div className="bottom"></div>
         </label>
         <nav className="menu1">
-          <li><Link className="link2" to="/news">News</Link></li>
-          <li><Link className="link2" to="/archive">Archive</Link></li>
-          <li><Link className="link2" to="/repvsdem">Republic vs Democracy</Link></li>
-          <li><Link className="link2" to="/hamilton">Hamilton Method</Link></li>
-          <li><Link className="link2" to="/electors">Electors Convention</Link></li>
-          <li><Link className="link2" to="/book">Book</Link></li>
-          <li><Link className="link2" to="/faq">FAQ</Link></li>
-          <li><Link className="link2" to="/contribute">Contribute</Link></li>
-          <li><Link className="link2" to="/contact">Contact</Link></li>
+          <li><Link className="link2" to="/about">ABOUT</Link></li>
+          <li><Link className="link2" to="/coinmachine">COIN-OPERATED MACHINES</Link></li>
+          <li><Link className="link2" to="/washfold">WASH & FOLD</Link></li>
+          <li><Link className="link2" to="/dryclean">DRY CLEANING</Link></li>
+          <li><Link className="link2" to="/speedqueen">SPEED QUEEN APP</Link></li>
+          <li><Link className="link2" to="/contact">CONTACT</Link></li>
+          <li></li>
         </nav>
       </nav>
     </div>

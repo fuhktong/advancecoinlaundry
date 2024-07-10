@@ -1,54 +1,51 @@
 import './global.css';
 import { Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
+import { useEffect } from 'react';
+import { gapi } from 'gapi-script';
 import Header from './Header.js';
 import Footer from './Footer.js';
 import Home from './pages/home.js'
-import News from './pages/news.js';
-import Archive from './pages/archive.js'
-import RepVsDem from './pages/repvsdem.js';
-import Hamilton from './pages/hamilton.js';
-import Electors from './pages/electors.js';
-import Book from './pages/book.js';
-import FAQ from './pages/faq.js';
-import Contribute from './pages/contribute.js';
+import Coinmachine from './pages/coinmachine.js';
+import Washfold from './pages/washfold.js';
+import About from './pages/about.js';
+import Speedqueen from './pages/speedqueen.js';
+import Reviews from './pages/reviews.js';
+import Dryclean from './pages/dryclean.js'
 import Contact from './pages/contact.js';
-import Video001 from './newssource/video001.js'
-import Video002 from './newssource/video002.js'
-import Video003 from './newssource/video003.js'
-import Video004 from './newssource/video004.js'
-import Video005 from './newssource/video005.js'
-import Video006 from './newssource/video006.js'
-import Video007 from './newssource/video007.js'
 
 const helmetContext = {};
 
+const CLIENT_ID = '897055066650-3mqhsvmpl6d45pjj1v195gcodj3fsp6m.apps.googleusercontent.com';
+
 const App = () => {
+  useEffect(() => {
+    function start() {
+      gapi.client.init({
+        clientId: CLIENT_ID,
+        scope: 'https://www.googleapis.com/auth/business.manage',
+      });
+    }
+    gapi.load('client:auth2', start);
+  }, []);
+
   return (
     <HelmetProvider context={helmetContext}>
-    <div>
-      <Header />
+      <div>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="news" element={<News />} />
-          <Route path="archive" element={<Archive />} />
-          <Route path="repvsdem" element={<RepVsDem />} />
-          <Route path="hamilton" element={<Hamilton />} />
-          <Route path="electors" element={<Electors />} />
-          <Route path="book" element={<Book />} />
-          <Route path="faq" element={<FAQ />} />
-          <Route path="contribute" element={<Contribute />} />
+          <Route path="coinmachine" element={<Coinmachine />} />
+          <Route path="washfold" element={<Washfold />} />
+          <Route path="dryclean" element={<Dryclean />} />
+          <Route path="about" element={<About />} />
+          <Route path="speedqueen" element={<Speedqueen />} />
+          <Route path="reviews" element={<Reviews />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="video001" element={<Video001 />} />
-          <Route path="video002" element={<Video002 />} />
-          <Route path="video003" element={<Video003 />} />
-          <Route path="video004" element={<Video004 />} />
-          <Route path="video005" element={<Video005 />} />
-          <Route path="video006" element={<Video006 />} />
-          <Route path="video007" element={<Video007 />} />
         </Routes>
-      <Footer />
-    </div>
+
+        <Footer />
+      </div>
     </HelmetProvider>
   );
 };
