@@ -3,7 +3,6 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 20px 0 20px 20px;
     color: white;
     position: relative;
     bottom: 0;
@@ -11,12 +10,16 @@ footer {
 }
 
 footer h2 {
-    margin-bottom: 25px;
+    font-family: 'Permanent Marker';
+    font-size: 30px;
     text-shadow: var(--text-dropshadow);
+    padding: 30px 50px 0 50px;
+    margin: 0;
 }
 
 .footer-container {
     margin: 0;
+    padding: 0 50px 10px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,9 +80,9 @@ footer h2 {
 }
 
 @media screen and (max-width: 768px) {
-    h2 {
+    footer h2 {
         margin-top: 0;
-        padding-top: 25px;
+        padding: 20px 0 20px 0;
         text-align: center;
     }
 }
@@ -88,7 +91,7 @@ footer h2 {
     .footer-container {
         display: flex;
         flex-direction: column;
-        padding-bottom: 20px;
+        padding: 
     }
 }
 

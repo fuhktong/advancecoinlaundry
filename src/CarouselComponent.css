@@ -19,7 +19,7 @@
 
 .carousel-inner {
     display: flex;
-    transition: transform 1.25s ease;
+    transition: transform 2.5s ease-in-out;
 }
 
 .carousel-item {

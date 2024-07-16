@@ -1,5 +1,7 @@
 import './global.css';
-import { Routes, Route } from 'react-router-dom';
+import './transitions.css';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { HelmetProvider } from 'react-helmet-async';
 import { useEffect } from 'react';
 import { gapi } from 'gapi-script';
@@ -13,6 +15,7 @@ import Speedqueen from './pages/speedqueen.js';
 import Reviews from './pages/reviews.js';
 import Dryclean from './pages/dryclean.js'
 import Contact from './pages/contact.js';
+import ScrollToTop from './scrolltotop.js';
 
 const helmetContext = {};
 
@@ -29,21 +32,31 @@ const App = () => {
     gapi.load('client:auth2', start);
   }, []);
 
+  const location = useLocation();
+
   return (
     <HelmetProvider context={helmetContext}>
+      <ScrollToTop />
       <div>
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="coinmachine" element={<Coinmachine />} />
-          <Route path="washfold" element={<Washfold />} />
-          <Route path="dryclean" element={<Dryclean />} />
-          <Route path="about" element={<About />} />
-          <Route path="speedqueen" element={<Speedqueen />} />
-          <Route path="reviews" element={<Reviews />} />
-          <Route path="contact" element={<Contact />} />
-        </Routes>
-
+        <TransitionGroup>
+          <CSSTransition
+            key={location.key}
+            timeout={300}
+            classNames="fade"
+          >
+          <Routes location={location}>
+            <Route path="/" element={<Home />} />
+            <Route path="coinmachine" element={<Coinmachine />} />
+            <Route path="washfold" element={<Washfold />} />
+            <Route path="dryclean" element={<Dryclean />} />
+            <Route path="about" element={<About />} />
+            <Route path="speedqueen" element={<Speedqueen />} />
+            <Route path="reviews" element={<Reviews />} />
+            <Route path="contact" element={<Contact />} />
+          </Routes>
+        </CSSTransition>
+        </TransitionGroup>
         <Footer />
       </div>
     </HelmetProvider>

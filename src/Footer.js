@@ -21,7 +21,11 @@ const Footer = () => {
                         <li><Link className="link2" to="/dryclean">DRY CLEANING</Link></li>
                     </ul>
                 </div>
-                <div></div>
+                <div className="home-button">
+                    <a href="/">
+                        <img src="/advance_coin_laundry_logo_2.png" alt="Home" />
+                    </a>
+                </div>
             </div>
         </footer>
     );

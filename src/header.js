@@ -8,7 +8,7 @@ const Header = () => {
     <header>
       <div className="home-button"> 
         <a href="/">
-          <img src="/advance_coin_laundry_logo_2.png" alt="Homes" />
+          <img src="/advance_coin_laundry_logo_2.png" alt="Home" />
         </a>
       </div>
       <NavBar />

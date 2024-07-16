@@ -1,6 +1,6 @@
 import React from 'react';
 import '../sections.css';
-import { Aboutpic, DividerWhite, BusinessHours, Services, Specialties, PaymentTypes, BusinessAttributes, SpeedQueenImg, SpeedQueenText, Footer2 } from '../sections';
+import { Aboutpic, BusinessHours, Services, Specialties, PaymentTypes, BusinessAttributes, SpeedQueenImg, SpeedQueenText, Footer2 } from '../sections';
 import { Helmet } from 'react-helmet-async';
 
 const About = () => {
@@ -29,25 +29,18 @@ const About = () => {
         <div className="about-info-column">
           <h1 className="about-info-h1-title">About Us</h1>
           <p className="about-info-about">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Established in 2021, Advance Coin Laundry offers coin-operated washers and dryers, wash & fold services, and dry cleaning services in Orlando, FL. Completely renovated and air-conditioned, Advance Coin Laundry is the cleanest, coldest laundromat in Orlando! Visit us and download the new Speed Queen app and receive a $5 credit on your first-time use. Dry cleaning pick-up and drop off is on Tuesdays and Thursdays. Please note that last wash is at 8:55 PM daily. Check out our website for complete details.</p>
-          <div style={{height: "20px"}}></div>
-          <div style={{height: "20px"}}></div>
-          <DividerWhite />
-          <div style={{height: "20px"}}></div>
-          <BusinessHours />
-          <div style={{height: "20px"}}></div>
-          <DividerWhite />
-          <div style={{height: "20px"}}></div>
+          <div style={{height: "50px"}}></div>
+            <BusinessHours />
+          <div style={{height: "50px"}}></div>
           <div className="service-section-styles">
-          <Services />
-          <Specialties />
+            <Services />
+            <Specialties />
           </div>
-          <DividerWhite />
-          <div style={{height: "20px"}}></div>
+          <div style={{height: "50px"}}></div>
           <div className="service-section-styles">
           <PaymentTypes />
           <BusinessAttributes />
           </div>
-          <DividerWhite />
           <div style={{height: "50px"}}></div>
           <div className="service-section-styles">
           <SpeedQueenImg />

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Coinmachine, DividerWhite, Footer2 } from '../sections';
+import { Coinmachine, Footer2 } from '../sections';
 import '../sections.css';
 import { Helmet } from 'react-helmet-async';
 
@@ -37,15 +37,12 @@ const CoinMachine = () => {
         <p className="coinmachine-p">Curb-less Entrance</p>
         <p className="coinmachine-p">Automatic Sliding Doors</p>
         <div style={{height: "50px"}}></div>
-        <DividerWhite />
-        <div style={{height: "50px"}}></div>
         <p className="coinmachine-p">Our coin-operated machines can handle laundry loads ranging from 20 to 80 pounds, with prices starting at $3.00 and going up to $12.50. If you need assistance operating the machines, our friendly and knowledgeable on-site attendant is available to help you out.</p>
         <div style={{height: "20px"}}></div>
         <p className="coinmachine-p">With our Speed Queen Insights App, you can conveniently check machine availability either remotely or right in the store. Just select your machine by entering its number or scanning its QR code. After that, simply proceed by choosing your preferred settings, tap Continue, and press Start on the machine. Relax until the app alerts you when your laundry is nearing completion. Additionally, you'll earn reward points with every purchase, and your first $5.00 is complimentary!</p>
         <div style={{height: "20px"}}></div>
         <p className="coinmachine-p">We offer free Wi-Fi for your enjoyment while you wait, and we warmly welcome pets! Our doors are open seven days a week to accommodate your schedule. Visit us today and discover a more enjoyable laundromat experience!</p>
-        <div style={{height: "50px"}}></div>
-        <DividerWhite />
+        <div style={{height: "20px"}}></div>
         <h1 className="coinmachine-h1-title">We have all the laundry supplies you need available on-site</h1>
         <div style={{height: "20px"}}></div>
         <p className="coinmachine-p">Soaps and softeners</p>

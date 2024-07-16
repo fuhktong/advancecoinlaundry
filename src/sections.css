@@ -1,7 +1,6 @@
 body {
     margin: 0;
     width: 100vw;
-    background-color: #9fccd2;
     overflow-x: hidden
 }
 
@@ -40,14 +39,9 @@ body {
     align-items:center;
     justify-content: center;
     background-color: white;
-    font-family: Avenir Next, Futura;
-    font-weight: bold;
-    color: #9fccd2;
     height: 200px;
     padding: 100px 0;
     gap: 30px;
-    text-shadow: 1px 1px 1px antiquewhite;
-
 }
 
 @media (max-width: 768px) {
@@ -62,6 +56,10 @@ body {
     font-size: 25px;
     padding-bottom: 15px;
     text-decoration: underline;
+    font-family: Avenir Next, Futura;
+    font-weight: bold;
+    color: #9fccd2;
+    text-shadow: 1px 1px 1px rgb(190, 190, 190);
 }
 
 .footer2-hours, .footer2-visit, .footer2-contact {
@@ -71,13 +69,46 @@ body {
     flex: 1;
 }
 
+.footer2-p {
+    font-family: Avenir Next, Futura;
+    font-weight: bold;
+    color: #9fccd2;
+    text-shadow: 1px 1px 1px rgb(190, 190, 190);
+}
+
+.footer2-p a {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* homepage */
+
+.homepage-section {
+    margin-top: 120px;
+    height: 500px;
+    background-image: url('/public/laundry 2.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepage-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+}
 
 .homepage-title {
     font-family: 'Permanent Marker';
     font-size: 60px;
     text-shadow: 1px 1px 1px black;
-    margin: 0 5%;
+    margin: 0;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -116,12 +147,22 @@ body {
 .aboutpic-section {
     margin-top: 120px;
     height: 500px;
-    background-image: url('/public/laundry3.png');
+    background-image: url('/public/laundry 1.png');
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.aboutpic-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
 }
 
 .aboutpic-h2 {
@@ -144,10 +185,10 @@ body {
 
 .aboutpic-buttons {
     display: flex;
-    gap: 30px;
+    justify-content: center;
 }
 
-.aboutpic-button1, .aboutpic-button2 {
+.aboutpic-button1 {
     background-color: #9fccd2;
     border: none;
     color: white; 
@@ -164,7 +205,7 @@ body {
     transition-duration: 0.15s; 
 }
 
-.aboutpic-button1:hover, .aboutpic-button2:hover{
+.aboutpic-button1:hover {
     background-color: #6fccd8;
 }
 
@@ -219,7 +260,7 @@ body {
     margin: 0 15%;
     padding-top: 30px;
     text-shadow: var(--text-dropshadow);
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -240,7 +281,7 @@ body {
     margin: 0;
     text-shadow: var(--text-dropshadow);
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 /* service sections */
@@ -314,12 +355,22 @@ body {
 .coinmachine-section {
     margin-top: 120px;
     height: 500px;
-    background-image: url('/public/laundry3.png');
+    background-image: url('/public/laundry 5.png');
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.coinmachine-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
 }
 
 .coinmachine-h1-title {
@@ -346,12 +397,22 @@ body {
 .washfold-section {
     margin-top: 120px;
     height: 500px;
-    background-image: url('/public/laundry3.png');
+    background-image: url('/public/laundry 6.png');
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.washfold-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
 }
 
 .washfold-h1-title {
@@ -361,7 +422,7 @@ body {
     text-shadow: var(--text-dropshadow);
     font-size: 25px;
     font-weight: 500;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .washfold-p {
@@ -378,12 +439,22 @@ body {
 .dryclean-section {
     margin-top: 120px;
     height: 500px;
-    background-image: url('/public/laundry3.png');
+    background-image: url('/public/laundry 7.png');
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.dryclean-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
 }
 
 .dryclean-h1-title {
@@ -405,6 +476,29 @@ body {
     font-weight: 500;
 }
 
+/* speedqueen section */
+
+.speedqueen-section {
+    margin-top: 120px;
+    height: 500px;
+    background-image: url('/public/laundry 3.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.speedqueen-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+}
+
 .speedqueen-block {
     display: flex;
     flex-direction: row;
@@ -412,6 +506,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    padding: 100px 0;
 }
 
 @media (max-width: 768px) {
@@ -443,6 +538,7 @@ body {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
+    padding: 100px 0;
 }
 
 .speedqueen-app-img img{
@@ -459,9 +555,13 @@ body {
     margin: 0 20%;
     font-size: 35px;
     font-weight: 500;
-    color: #9fccd2;
+    color: white;
     text-shadow: 2px 2px 2px grey;
     height: auto;
+}
+
+.speedqueen-text {
+    padding-top: 100px;
 }
 
 .speedqueen-description {
@@ -473,7 +573,6 @@ body {
     padding: 0 10%;
     font-size: 20px;
     font-weight: 500;
-    background-color: #9fccd2;
     color: white;
     text-shadow: 2px 2px 2px grey;
     height: auto;

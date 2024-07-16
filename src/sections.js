@@ -1,4 +1,5 @@
 import React from "react";
+import styled from 'styled-components';
 import "./sections.css";
 
 export const DividerWhite = () => (
@@ -21,6 +22,12 @@ export const SpaceDividerSmall = () => (
   <div className="spacedividersmall"></div>
 );
 
+const StyledLink = styled.a`
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 export const Footer2 = () => (
   <div className="footer2">
     <div className="footer2-hours">
@@ -32,37 +39,51 @@ export const Footer2 = () => (
     </div>
     <div className="footer2-visit">
       <div className="footer2-h1">Visit Us</div>
-      <div className="footer2-p">5575 S Semoran Blvd</div>
-      <div className="footer2-p">Suite 46</div>
-      <div className="footer2-p">Orlando , FL 32822</div>
+      <div className="footer2-p">
+      <StyledLink href="https://maps.app.goo.gl/PXH87qQesxWAWqbKA" target="_blank" rel="noreferrer">
+      5575 S Semoran Blvd<br></br>Suite 46<br></br>Orlando, FL 32822
+      </StyledLink>
+      </div>
       <div className="footer2-p">Get Directions</div>
       <div className="footer2-p">Behind the Library on Hoffner Avenue.</div>
       <div className="footer2-p">Enter “Advance Coin Laundry” into Waze or Google Maps to search for our location</div>
     </div>
     <div className="footer2-contact">
       <div className="footer2-h1">Contact Us</div>
-      <div className="footer2-p">(407) 237-9531</div>
-      <div className="footer2-p">advancecoin47@gmail.com</div>
+      <div className="footer2-p">
+        <StyledLink href="tel:+14072379531">(407) 237-9531</StyledLink>
+      </div>
+      <div className="footer2-p">
+        <StyledLink href="mailto:advancecoin47@gmail.com">advancecoin47@gmail.com</StyledLink>
+      </div>
     </div>
   </div>
 );
 
 export const HomePage = () => (
-  <section className="aboutpic-section">
-    <h2 className="homepage-title">Advance Coin Laundry</h2>
-    <h1 className="homepage-subtitle">Laundromat in Orlando, FL<br />Attendant On-Site | All New Machines | Free Wi-Fi</h1>
-    <div className="aboutpic-buttons">
-    <button className="aboutpic-button1" onClick={() => window.location.href = "/contact"}>Visit Us</button>
+  <section className="homepage-section">
+    <div className="homepage-section-text">
+      <h2 className="homepage-title">Advance Coin Laundry</h2>
+      <h1 className="homepage-subtitle">Laundromat in Orlando, FL<br />Attendant On-Site | All New Machines | Free Wi-Fi</h1>
+      <div className="aboutpic-buttons">
+      <button className="aboutpic-button1" onClick={() => window.location.href = "/contact"}>Visit Us</button>
+      </div>
     </div>
   </section>
 );
 
 export const Aboutpic = () => (
   <section className="aboutpic-section">
-    <div className="aboutpic-h2"><h2>About Advance Coin Laundry</h2></div>
-    <div className="aboutpic-h1"><h1>Attendant On-Site | All New Machines | Free Wi-Fi</h1></div>
-    <div className="aboutpic-buttons">
-      <button className="aboutpic-button1" onClick={() => window.location.href = "/contact"}>Visit Us</button>
+    <div className="aboutpic-section-text">
+      <div className="aboutpic-h2">
+        <h2>About Advance Coin Laundry</h2>
+      </div>
+      <div className="aboutpic-h1">
+        <h1>Attendant On-Site | All New Machines | Free Wi-Fi</h1>
+      </div>
+      <div className="aboutpic-buttons">
+        <button className="aboutpic-button1" onClick={() => window.location.href = "/contact"}>Visit Us</button>
+      </div>
     </div>
   </section>
 );
@@ -137,42 +158,63 @@ export const SpeedQueenText = () => (
 </div>
 )
 
-export const ContactInfo = () => (
-  <div className="contact-info">
-    <div></div>
-    <div></div>
-  </div>
-)
+export const SpeedQueenTitle = () => (
+  <section className="speedqueen-section">
+    <div className="speedqueen-section-text">
+      <div className="aboutpic-h2">
+        <h2>Speed Queen Mobile App</h2>
+      </div>
+    </div>
+  </section>
+);
 
 export const Coinmachine = () => (
   <section className="coinmachine-section">
-    <div className="aboutpic-h2"><h2>Self-Service Washers and Dryers</h2></div>
-    <div className="aboutpic-h1"><h1>Attendant On-Site | All New Machines | Free Wi-Fi</h1></div>
-    <div style={{height: "20px"}}></div>
-    <div className="aboutpic-buttons">
-    <button className="aboutpic-button1" onClick={() => window.location.href = "/contact"}>Visit Us</button>
+    <div className="coinmachine-section-text">
+      <div className="aboutpic-h2">
+        <h2>Self-Service Washers and Dryers</h2>
+      </div>
+      <div className="aboutpic-h1">
+        <h1>Attendant On-Site | All New Machines | Free Wi-Fi</h1>
+      </div>
+      <div style={{height: "20px"}}></div>
+      <div className="aboutpic-buttons">
+        <button className="aboutpic-button1" onClick={() => window.location.href = "/contact"}>Visit Us</button>
+      </div>
     </div>
   </section>
 );
 
 export const Washfold = () => (
   <section className="washfold-section">
-    <div className="aboutpic-h2"><h2>Wash & Fold Services</h2></div>
-    <div className="aboutpic-h1"><h1>Attendant On-Site | All New Machines | Free Wi-Fi</h1></div>
-    <div style={{height: "20px"}}></div>
-    <div className="aboutpic-buttons">
-    <button className="aboutpic-button1" onClick={() => window.location.href = "/contact"}>Visit Us</button>
+    <div className="washfold-section-text">
+      <div className="aboutpic-h2">
+        <h2>Wash & Fold Services</h2>
+      </div>
+      <div className="aboutpic-h1">
+        <h1>Attendant On-Site | All New Machines | Free Wi-Fi</h1>
+      </div>
+      <div style={{height: "20px"}}></div>
+      <div className="aboutpic-buttons">
+        <button className="aboutpic-button1" onClick={() => window.location.href = "/contact"}>Visit Us</button>
+      </div>
     </div>
   </section>
 );
 
 export const Dryclean = () => (
-  <section className="washfold-section">
-    <div className="aboutpic-h2"><h2>Dry Cleaning Services</h2></div>
-    <div className="aboutpic-h1"><h1>Attendant On-Site | All New Machines | Free Wi-Fi</h1></div>
-    <div style={{height: "20px"}}></div>
-    <div className="aboutpic-buttons">
-    <button className="aboutpic-button1" onClick={() => window.location.href = "/contact"}>Visit Us</button>
+  <section className="dryclean-section">
+    <div className="dryclean-section-text">
+      <div className="aboutpic-h2">
+        <h2>Dry Cleaning Services</h2>
+      </div>
+      <div className="aboutpic-h1">
+        <h1>Attendant On-Site | All New Machines | Free Wi-Fi</h1>
+      </div>
+      <div style={{height: "20px"}}></div>
+      <div className="aboutpic-buttons">
+        <button className="aboutpic-button1" onClick={() => window.location.href = "/contact"}>Visit Us</button>
+      </div>
     </div>
   </section>
 );

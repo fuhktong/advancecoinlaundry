@@ -1,5 +1,5 @@
 :root {
-    background-image: #9fccd2;
+    background-image: url(/public/bubbles7.png);
     color: white;
     font-family: Avenir Next, Futura;
     --text-dropshadow: 1px 1px 1px grey;
@@ -9,4 +9,8 @@
 html, body {
     height: 100%;
     margin: 0;
+}
+
+section {
+    background-image: url(/public/bubbles7.png);
 }

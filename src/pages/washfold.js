@@ -1,6 +1,6 @@
 import React from 'react';
 import '../sections';
-import { Washfold, Footer2, DividerWhite } from '../sections';
+import { Washfold, Footer2 } from '../sections';
 import { Helmet } from 'react-helmet-async';
 
 const WashFold = () => {
@@ -32,7 +32,6 @@ const WashFold = () => {
       <div style={{height: "20px"}}></div>
       <p className="washfold-p">Rugs, pet beds, comforters, and heavy blankets should always be washed in a commercial facility. Visit us for all your washing and drying needs!</p>
       <div style={{height: "50px"}}></div>
-      <DividerWhite />
       <h1 className="washfold-h1-title">Wash & Fold Pricing (Minimum Services - $15.00)</h1>
       <div style={{height: "20px"}}></div>
       <p className="washfold-p">Two+ day service - $2.15 per pound</p>

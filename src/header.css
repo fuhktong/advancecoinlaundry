@@ -16,7 +16,6 @@ header {
   justify-content: space-between; 
   padding: 10px;
   z-index: 1000;
-  border-bottom: 5px solid white;
 }
 
 .home-button {
@@ -220,7 +219,6 @@ a {
   transition: all 0.3s ease;
   text-shadow: var(--text-dropshadow);
   margin-top: 45px;
-  border-top: 5px solid white;
 }
 
 .link2 {
