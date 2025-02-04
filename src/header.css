@@ -2,29 +2,26 @@
 
 /* Header styles */
 header {
-  position: fixed;
-  height: 100px;
+  height: 120px;
   top: 0;
   left: 0;
-  width: 100%;
-  background-image: url(/public/bubbles7.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   align-items: center;
-  justify-content: space-between; 
-  padding: 10px;
+  justify-content: space-between;
   z-index: 1000;
+  background-color: var(--background-color);
 }
 
 .home-button {
   box-sizing: border-box;
-  position: relative;
+  position: fixed;
   display: flex;
-  align-items: center; 
+  align-items: center;
   z-index: 150;
-  padding-left: 15px;
+  margin: 0 0 0 0.5rem;
 }
 
 .home-button img {
@@ -35,10 +32,8 @@ header {
 }
 
 .nav-bar {
-  display: flex; 
-  align-items: center;
-  margin-top: 5px;
-  padding-right: 10px;
+  position: flex;
+  font-family: "Permanent Marker";
 }
 
 .nav-bar ul {
@@ -60,13 +55,13 @@ header {
 
 .nav-bar ul li a {
   color: white;
-  text-shadow: var(--text-dropshadow);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
   text-decoration: none;
   font-size: 19px;
   font-weight: 600;
   display: flexbox;
   justify-content: space-between;
-  transition: text-decoration .3s ease;
+  transition: text-decoration 0.3s ease;
 }
 
 #services {
@@ -74,15 +69,15 @@ header {
   text-decoration: none;
   font-size: 19px;
   font-weight: 600;
-  text-shadow: var(--text-dropshadow);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
   display: flexbox;
   justify-content: space-between;
-  transition: text-decoration .3s ease;
+  transition: text-decoration 0.3s ease;
 }
 
 .nav-bar ul li a:hover {
   text-decoration: underline;
-  transition: text-decoration .6s ease-in-out;
+  transition: text-decoration 0.6s ease-in-out;
 }
 
 .nav-bar ul li:nth-child(2):hover a {
@@ -111,23 +106,21 @@ header {
 
 .dropdown-content {
   display: none;
+  position: absolute;
   top: 100%;
-  left: 50%;
-  top: 100%;
-  transform: translateX(-8%);
-  border-left: 3px solid white;
+  left: 0%;
+  transform: translateY(0);
   text-align: left;
+  border-radius: 15px;
+  border: 5px solid white;
 }
 
 .nav-bar ul li:hover .dropdown-content {
   display: block;
-  position: absolute;
-  padding-top: 10px;
+  padding: 10px 5px 10px 5px;
   min-width: 320px;
-  z-index: 1;
-  top: 100%;
-  left: 0;
-  background-color: #9fccd2;        
+  background-image: url(/public/bubbles7.png);
+  background-color: var(--background-color);
 }
 
 .dropdown-content a {
@@ -213,12 +206,13 @@ a {
   text-align: center;
   height: 0px;
   overflow: hidden;
-  transition: height .4s ease;
+  transition: height 0.4s ease;
   z-index: 120;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   text-shadow: var(--text-dropshadow);
   margin-top: 45px;
+  border-top: 10px solid white;
 }
 
 .link2 {

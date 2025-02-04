@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import './contactform.css';
+import React, { useState } from "react";
+import "./contactform.css";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
-  const [responseMessage, setResponseMessage] = useState('');
-  const [responseStatus, setResponseStatus] = useState('');
+  const [responseMessage, setResponseMessage] = useState("");
+  const [responseStatus, setResponseStatus] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,30 +20,32 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://advancecoinlaundry.com/contactform.php', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams(formData).toString(),
-      });
+      const response = await fetch(
+        "http://advancecoinlaundry.com/contactform.php",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: new URLSearchParams(formData).toString(),
+        }
+      );
 
       const result = await response.json();
       setResponseStatus(result.status);
       setResponseMessage(result.message);
 
-      if (result.status === 'success') {
+      if (result.status === "success") {
         setFormData({
-          name: '',
-          email: '',
-          message: '',
+          name: "",
+          email: "",
+          message: "",
         });
       }
-
     } catch (error) {
-      console.error('Error submitting the form:', error);
-      setResponseStatus('error');
-      setResponseMessage('An error occurred while sending your message.');
+      console.error("Error submitting the form:", error);
+      setResponseStatus("error");
+      setResponseMessage("An error occurred while sending your message.");
     }
   };
 
@@ -86,13 +88,13 @@ const ContactForm = () => {
               required
             ></textarea>
           </li>
-          <li className='button'>
+          <li className="button">
             <button type="submit">Send</button>
           </li>
         </ul>
       </form>
       {responseMessage && (
-        <p className={responseStatus === 'success' ? 'success' : 'error'}>
+        <p className={responseStatus === "success" ? "success" : "error"}>
           {responseMessage}
         </p>
       )}

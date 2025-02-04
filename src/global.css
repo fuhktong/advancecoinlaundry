@@ -1,16 +1,75 @@
 :root {
-    background-image: url(/public/bubbles7.png);
-    color: white;
-    font-family: Avenir Next, Futura;
-    --text-dropshadow: 1px 1px 1px grey;
-    margin: 0;
+  background-image: url(/public/bubbles7.png);
+  color: rgb(255, 255, 255);
+  font-family: Verdana;
+  font-size: 15px;
+  font-weight: 600;
+  --text-dropshadow: 1px 1px 1px rgb(0, 0, 0);
+  margin: 0;
+  text-align: center;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
-section {
-    background-image: url(/public/bubbles7.png);
+h1 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
 }
+
+h3 {
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 0; /* Add padding to prevent overflow */
+  margin: 0;
+  overflow-wrap: break-word; /* Allow long words to break */
+  word-wrap: break-word; /* For older browsers */
+  overflow: hidden; /* Prevent overflow */
+  box-sizing: border-box; /* Ensure padding is included in width */
+  color: #444;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+
+.text-section-layer {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Fixed spacing and correct property name */
+  margin: 20px 10px; /* Removed comma, added semicolon */
+  padding: 50px;
+  max-width: 80%; /* Removed comma, added semicolon */
+  box-sizing: border-box; /* Corrected property name */
+  overflow: auto; /* Added semicolon */
+  border: none; /* Added semicolon */
+  border-radius: 30px; /* Fixed property name */
+}
+
+/*
+style={{
+  backgroundColor: "rgba(255, 255, 255, 0.75)",
+  margin: "50px",
+  maxWidth: "90%",
+  boxSizing: "border-box",
+  overflow: "auto",
+  border: "none",
+  borderRadius: "10px",
+}}
+*/

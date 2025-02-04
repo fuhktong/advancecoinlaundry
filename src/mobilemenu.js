@@ -38,6 +38,7 @@ const MobileMenu = () => {
           <li><Link className="link2" to="/washfold">WASH & FOLD</Link></li>
           <li><Link className="link2" to="/dryclean">DRY CLEANING</Link></li>
           <li><Link className="link2" to="/speedqueen">SPEED QUEEN APP</Link></li>
+          <li><Link className="link2" to="/reviews">REVIEWS</Link></li>
           <li><Link className="link2" to="/contact">CONTACT</Link></li>
           <li></li>
         </nav>

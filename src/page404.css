@@ -1,0 +1,29 @@
+.page404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  color: #333; /* Text color */
+  text-align: center; /* Center align text */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.page404 img {
+  max-width: 40%;
+  height: auto;
+  margin: 0 0 20px 0;
+}
+
+.page404 h1 {
+  font-size: 3.5rem; /* Large font size for the heading */
+  color: white;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0);
+}
+
+.page404 p {
+  font-size: 1.2rem; /* Slightly larger font size for additional text */
+  margin-top: 0;
+}

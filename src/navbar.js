@@ -15,6 +15,7 @@ const NavBar = () => {
           </div>
         </li>
         <li><Link to="/speedqueen">SPEED QUEEN APP</Link></li>
+        <li><Link to="/reviews">REVIEWS</Link></li>
         <li><Link to="/contact">CONTACT</Link></li>
       </ul>
     </nav>

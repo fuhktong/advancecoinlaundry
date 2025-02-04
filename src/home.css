@@ -1,0 +1,19 @@
+.home-speedqueen {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.home-speedqueen-layer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+@media (max-width: 768px) {
+  .home-speedqueen-layer {
+    flex-direction: column;
+  }
+}
