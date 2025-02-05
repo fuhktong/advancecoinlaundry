@@ -5,12 +5,10 @@ import { Helmet } from "react-helmet-async";
 import CarouselComponent from "./components/CarouselComponent";
 import FooterContact from "./components/footer-contact";
 import "./home.css";
-// import HomePagePopup from "./components/home-page-popup";
 
 const Home = () => {
   return (
     <div>
-      {/* <HomePagePopup /> */}
       <Helmet>
         <title>Advance Coin Laundry - Orlando, Florida Laundrymat</title>
         <meta

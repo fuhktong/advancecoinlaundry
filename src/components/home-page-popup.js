@@ -9,7 +9,7 @@ const HomePagePopup = () => {
     setIsClosing(true);
     setTimeout(() => {
       setShowPopup(false);
-    }, 500); // Match the duration of the CSS transition
+    }, 500);
   };
 
   return (

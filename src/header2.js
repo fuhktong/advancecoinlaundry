@@ -10,7 +10,7 @@ const Header2 = () => {
   };
 
   const handleLinkClick = () => {
-    setIsMobileMenuOpen(false); // Close the mobile menu
+    setIsMobileMenuOpen(false);
   };
 
   return (

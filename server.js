@@ -42,11 +42,6 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
-// app.use((req, res, next) => {
-//     // res.status(404).send("<h1>Page not found</h1>");
-//     res.status(404).sendFile(path.join(__dirname, "views", "page404.html"));
-//   });
-
 app.listen(port, () => {
   console.log(`Proxy server running on port ${port}`);
 });
