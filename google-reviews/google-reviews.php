@@ -10,7 +10,7 @@ function renderGoogleReviews() {
 ?>
     <div class="reviews-container">
         <div style="height: 30px;"></div>
-        <h1>Advance Coin Laundry Reviews</h1>
+        <h1>Advance Coin Laundry Awesome Reviews</h1>
         <div id="reviewsContent">
             <div id="loadingMessage">Loading reviews...</div>
         </div>
