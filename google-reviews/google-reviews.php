@@ -1,17 +1,18 @@
 <?php
 function renderGoogleReviews() {
-    // Load environment variables
-    $envFile = __DIR__ . '/../.env';
+    // Load environment variables from outside public folder
+    $envFile = __DIR__ . '/../../.env'; // Go up two levels from google-reviews/ to reach outside public folder
     if (file_exists($envFile)) {
         $env = file_get_contents($envFile);
         preg_match('/GOOGLE_MAPS_API_KEY=(.+)/', $env, $apiMatches);
         preg_match('/REACT_APP_LOCATION_ID=(.+)/', $env, $locationMatches);
         
-        $googleApiKey = isset($apiMatches[1]) ? trim($apiMatches[1]) : 'YOUR_GOOGLE_PLACES_API_KEY';
-        $placeId = isset($locationMatches[1]) ? trim($locationMatches[1]) : 'YOUR_PLACE_ID';
+        $googleApiKey = isset($apiMatches[1]) ? trim($apiMatches[1]) : 'AIzaSyDUL9qqYP-bxbv1cf91MqZyTE3VesmXhHo';
+        $placeId = isset($locationMatches[1]) ? trim($locationMatches[1]) : 'ChIJmfLgvmRj54gRDbA8axqNIuk';
     } else {
-        $googleApiKey = 'YOUR_GOOGLE_PLACES_API_KEY';
-        $placeId = 'YOUR_PLACE_ID';
+        // Fallback to hardcoded values if .env not found
+        $googleApiKey = 'AIzaSyDUL9qqYP-bxbv1cf91MqZyTE3VesmXhHo'; // GOOGLE_MAPS_API_KEY
+        $placeId = 'ChIJmfLgvmRj54gRDbA8axqNIuk'; // REACT_APP_LOCATION_ID
     }
 ?>
     <div class="reviews-container">
