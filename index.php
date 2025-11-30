@@ -1,5 +1,5 @@
 <?php
-// FTP deployment with updated password
+// FTP deployment - Google Reviews error handling fix
 // Get the request URI and remove query string
 $request = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $request = rtrim($request, '/');
