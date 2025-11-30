@@ -1,0 +1,87 @@
+.footer-contact-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  height: auto;
+  padding: 90px 20px 120px 20px;
+  gap: 20px;
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+  box-sizing: border-box;
+  overflow: hidden;
+  color: #444;
+  background-image: url(/images/bubbles7.png);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 900px) {
+  .footer-contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 15px;
+  }
+}
+
+.text-contact-info {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  padding: 40px 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 20px;
+  min-height: 200px;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 900px) {
+  .text-contact-info {
+    margin: 0;
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+    padding: 30px 20px;
+    min-height: 150px;
+  }
+}
+
+.text-contact-info h1 {
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.text-contact-info p {
+  font-size: 16px;
+  margin-bottom: 4px;
+  padding: 0;
+  color: #444;
+  line-height: 1.3;
+}
+
+.text-contact-info p:last-child {
+  margin-bottom: 0;
+}
+
+.footer-contact-section a {
+  color: #444;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-contact-section a:hover {
+  text-decoration: underline;
+  color: #2c5282;
+}

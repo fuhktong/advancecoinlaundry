@@ -1,0 +1,92 @@
+.homepic {
+  background-image: url("/images/laundry 2.png");
+}
+
+.aboutpic {
+  background-image: url("/images/laundry 6.png");
+}
+
+.coinmachinepic {
+  background-image: url("/images/laundry 3.png");
+}
+
+.washfoldpic {
+  background-image: url("/images/laundry 5.png");
+}
+
+.drycleanpic {
+  background-image: url("/images/laundry 4.png");
+}
+
+.speedqueenpic {
+  background-image: url("/images/laundry 5.png");
+}
+
+.mainpic-section {
+  height: 500px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 10px solid white;
+  border-top: 10px solid white;
+}
+
+.mainpic-section-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-shadow: var(--text-dropshadow);
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.mainpic-section-text h2 {
+  font-family: "Permanent Marker";
+  font-size: 40px;
+  text-shadow: 1px 1px 1px black;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+}
+
+.mainpic-section-text h1 {
+  text-shadow: 1px 1px 1px black;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  width: 90%;
+}
+
+.mainpic-section-text button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  background-color: #9fccd2;
+  border: 4px solid white;
+  color: white;
+  width: 180px;
+  padding: 15px 32px;
+  text-shadow: var(--text-dropshadow);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition-duration: 0.15s;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.mainpic-section-text button:hover {
+  background-color: #6fccd8;
+}
