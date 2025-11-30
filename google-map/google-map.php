@@ -9,9 +9,9 @@ function renderAdvanceMap() {
         </div>
         <div class="google-map-embed">
             <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14020.934!2d-81.2982!3d28.4567!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e773a9b5b6c7b5%3A0x1234567890abcdef!2sAdvance%20Coin%20Laundry!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
-                width="100%" 
-                height="450" 
+                src="https://maps.google.com/maps?q=Advance+Coin+Laundry,+5575+S+Semoran+Blvd+Suite+46,+Orlando,+FL+32822&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                width="90%" 
+                height="600" 
                 style="border:0;" 
                 allowfullscreen="" 
                 loading="lazy" 
