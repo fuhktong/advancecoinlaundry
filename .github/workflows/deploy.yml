@@ -20,8 +20,11 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         exclude: |
-          **/.git*
-          **/.github*
-          **/node_modules/**
-          **/README.md
-          **/deploycode.txt
+          .git/**
+          .github/**
+          node_modules/**
+          README.md
+          deploycode.txt
+          .gitignore
+          .DS_Store
+          **/.DS_Store
