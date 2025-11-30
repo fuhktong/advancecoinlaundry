@@ -1,10 +1,12 @@
 <?php
 function renderGoogleReviews() {
-    // TODO: Replace these with your actual API key and place ID
-    // Get API key from: https://console.cloud.google.com/
-    // Get Place ID from: https://developers.google.com/maps/documentation/places/web-service/place-id
-    $googleApiKey = 'YOUR_GOOGLE_PLACES_API_KEY';
-    $placeId = 'YOUR_PLACE_ID';
+    // Load environment variables
+    $env = file_get_contents('.env');
+    preg_match('/GOOGLE_MAPS_API_KEY=(.+)/', $env, $apiMatches);
+    preg_match('/REACT_APP_LOCATION_ID=(.+)/', $env, $locationMatches);
+    
+    $googleApiKey = isset($apiMatches[1]) ? trim($apiMatches[1]) : 'YOUR_GOOGLE_PLACES_API_KEY';
+    $placeId = isset($locationMatches[1]) ? trim($locationMatches[1]) : 'YOUR_PLACE_ID';
 ?>
     <div class="reviews-container">
         <div style="height: 30px;"></div>
