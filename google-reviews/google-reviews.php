@@ -1,6 +1,8 @@
 <?php
 function renderGoogleReviews() {
-    // You'll need to replace these with your actual API key and place ID
+    // TODO: Replace these with your actual API key and place ID
+    // Get API key from: https://console.cloud.google.com/
+    // Get Place ID from: https://developers.google.com/maps/documentation/places/web-service/place-id
     $googleApiKey = 'YOUR_GOOGLE_PLACES_API_KEY';
     $placeId = 'YOUR_PLACE_ID';
 ?>
@@ -23,9 +25,15 @@ function renderGoogleReviews() {
         function initReviews() {
             const loadingMessage = document.getElementById('loadingMessage');
             
+            // Check if API key is configured
+            if ('<?php echo $googleApiKey; ?>' === 'YOUR_GOOGLE_PLACES_API_KEY') {
+                loadingMessage.innerHTML = '<strong>Setup Required:</strong><br/>Google Places API key not configured.<br/><a href="https://console.cloud.google.com/" target="_blank" style="color: #4285f4;">Get API key here</a>';
+                return;
+            }
+            
             // Check if Google Maps API loaded
             if (typeof google === 'undefined' || !google.maps || !google.maps.places) {
-                loadingMessage.innerHTML = 'Google Maps API failed to load. Please check your API key.';
+                loadingMessage.innerHTML = 'Google Maps API failed to load. Please check your API key permissions.';
                 return;
             }
 
