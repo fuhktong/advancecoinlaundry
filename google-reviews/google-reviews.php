@@ -1,12 +1,18 @@
 <?php
 function renderGoogleReviews() {
     // Load environment variables
-    $env = file_get_contents('.env');
-    preg_match('/GOOGLE_MAPS_API_KEY=(.+)/', $env, $apiMatches);
-    preg_match('/REACT_APP_LOCATION_ID=(.+)/', $env, $locationMatches);
-    
-    $googleApiKey = isset($apiMatches[1]) ? trim($apiMatches[1]) : 'YOUR_GOOGLE_PLACES_API_KEY';
-    $placeId = isset($locationMatches[1]) ? trim($locationMatches[1]) : 'YOUR_PLACE_ID';
+    $envFile = __DIR__ . '/../.env';
+    if (file_exists($envFile)) {
+        $env = file_get_contents($envFile);
+        preg_match('/GOOGLE_MAPS_API_KEY=(.+)/', $env, $apiMatches);
+        preg_match('/REACT_APP_LOCATION_ID=(.+)/', $env, $locationMatches);
+        
+        $googleApiKey = isset($apiMatches[1]) ? trim($apiMatches[1]) : 'YOUR_GOOGLE_PLACES_API_KEY';
+        $placeId = isset($locationMatches[1]) ? trim($locationMatches[1]) : 'YOUR_PLACE_ID';
+    } else {
+        $googleApiKey = 'YOUR_GOOGLE_PLACES_API_KEY';
+        $placeId = 'YOUR_PLACE_ID';
+    }
 ?>
     <div class="reviews-container">
         <div style="height: 30px;"></div>
@@ -28,8 +34,12 @@ function renderGoogleReviews() {
             const loadingMessage = document.getElementById('loadingMessage');
             
             // Check if API key is configured
-            if ('<?php echo $googleApiKey; ?>' === 'YOUR_GOOGLE_PLACES_API_KEY') {
-                loadingMessage.innerHTML = '<strong>Setup Required:</strong><br/>Google Places API key not configured.<br/><a href="https://console.cloud.google.com/" target="_blank" style="color: #4285f4;">Get API key here</a>';
+            const apiKey = '<?php echo $googleApiKey; ?>';
+            console.log('API Key loaded:', apiKey);
+            console.log('Place ID loaded:', '<?php echo $placeId; ?>');
+            
+            if (apiKey === 'YOUR_GOOGLE_PLACES_API_KEY' || apiKey === '') {
+                loadingMessage.innerHTML = '<strong>Setup Required:</strong><br/>Google Places API key not configured.<br/><a href="https://console.cloud.google.com/" target="_blank" style="color: #4285f4;">Get API key here</a><br/><small>Debug: Key = "' + apiKey + '"</small>';
                 return;
             }
             
