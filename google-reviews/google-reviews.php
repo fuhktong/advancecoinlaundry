@@ -2,7 +2,7 @@
 function renderGoogleReviews() {
     // Load environment variables
     $env = file_get_contents('.env');
-    preg_match('/GOOGLE_MAPS_API_KEY=(.+)/', $env, $apiMatches);
+    preg_match('/REACT_APP_GOOGLE_BUSINESS_API_KEY=(.+)/', $env, $apiMatches);
     preg_match('/REACT_APP_LOCATION_ID=(.+)/', $env, $locationMatches);
     
     $googleApiKey = isset($apiMatches[1]) ? trim($apiMatches[1]) : 'YOUR_GOOGLE_PLACES_API_KEY';
