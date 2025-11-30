@@ -1,5 +1,5 @@
 <?php
-// FTP deployment configured - test deployment
+// FTP deployment with correct credentials - testing now
 // Get the request URI and remove query string
 $request = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $request = rtrim($request, '/');
