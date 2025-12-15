@@ -1,8 +1,8 @@
 <?php
 function getCurrentPageTitle($request) {
     $titles = [
-        '' => 'Advance Coin Laundry - Best Laundromat in Albuquerque',
-        '/' => 'Advance Coin Laundry - Best Laundromat in Albuquerque',
+        '' => 'Advance Coin Laundry - Best Laundromat in Orlando',
+        '/' => 'Advance Coin Laundry - Best Laundromat in Orlando',
         '/about' => 'About Us - Advance Coin Laundry',
         '/coinmachine' => 'Coin-Operated Machines - Advance Coin Laundry',
         '/washfold' => 'Wash & Fold Service - Advance Coin Laundry',
