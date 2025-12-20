@@ -12,7 +12,7 @@ function renderFooterContact() {
         
         <div class="text-contact-info">
             <h1>Visit Us</h1>
-            <p>4755 S Kirkman Rd</p>
+            <p>5575 S Semoran Blvd</p>
             <p>Suite 46</p>
             <p>Orlando, FL 32822</p>
             <p>Behind the Library on Hoffner Avenue.</p>
