@@ -14,6 +14,21 @@ function getCurrentPageTitle($request) {
     return isset($titles[$request]) ? $titles[$request] : 'Advance Coin Laundry';
 }
 
+function getCurrentPageDescription($request) {
+    $descriptions = [
+        '' => 'Orlando\'s premier laundromat with brand new Speed Queen washers and dryers, wash & fold service, dry cleaning, and air conditioning. Clean, safe, and convenient.',
+        '/' => 'Orlando\'s premier laundromat with brand new Speed Queen washers and dryers, wash & fold service, dry cleaning, and air conditioning. Clean, safe, and convenient.',
+        '/about' => 'Learn about Advance Coin Laundry, Orlando\'s cleanest and most modern laundromat featuring new Speed Queen equipment and excellent customer service.',
+        '/coinmachine' => 'State-of-the-art coin-operated Speed Queen washing machines and dryers at Advance Coin Laundry in Orlando. Fast, efficient, and reliable.',
+        '/washfold' => 'Professional wash and fold service at Advance Coin Laundry. Same-day and next-day service available with customer loyalty program.',
+        '/dryclean' => 'Quality dry cleaning services at Advance Coin Laundry in Orlando. Expert care for your delicate garments and professional attire.',
+        '/speedqueen' => 'Download the Speed Queen app to pay for your laundry with your phone and get notifications when your cycle is complete.',
+        '/contact' => 'Contact Advance Coin Laundry in Orlando for questions about our services, hours, or to schedule wash & fold pickup.',
+        '/reviews' => 'Read customer reviews and testimonials about Advance Coin Laundry\'s exceptional service and clean facilities in Orlando.'
+    ];
+    return isset($descriptions[$request]) ? $descriptions[$request] : 'Orlando\'s premier laundromat with modern equipment and excellent service.';
+}
+
 $current_request = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $current_request = rtrim($current_request, '/');
 ?>
@@ -22,7 +37,9 @@ $current_request = rtrim($current_request, '/');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<?php echo getCurrentPageDescription($current_request); ?>">
     <title><?php echo getCurrentPageTitle($current_request); ?></title>
+    <link rel="canonical" href="https://advancecoinlaundry.com<?php echo $current_request === '' ? '/' : $current_request; ?>">
     <link rel="icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="/global.css">
     <link rel="stylesheet" href="/header/header.css">
