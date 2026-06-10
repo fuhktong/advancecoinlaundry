@@ -146,3 +146,17 @@ footer a {
 .logo-footer img {
   max-height: 100px;
 }
+
+.footer-legal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0 16px 0;
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.footer-legal-divider {
+  color: white;
+}

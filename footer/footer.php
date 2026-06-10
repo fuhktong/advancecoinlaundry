@@ -37,6 +37,11 @@
                 </a>
             </div>
         </div>
+        <div class="footer-legal">
+            <a class="link2" href="/privacy-policy">Privacy Policy</a>
+            <span class="footer-legal-divider">|</span>
+            <a class="link2" href="/terms-of-service">Terms of Service</a>
+        </div>
     </footer>
 
     <script>

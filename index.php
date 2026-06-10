@@ -14,7 +14,9 @@ $routes = [
     '/about' => 'pages/about.php',
     '/speedqueen' => 'pages/speedqueen.php',
     '/contact' => 'pages/contact.php',
-    '/reviews' => 'pages/reviews.php'
+    '/reviews' => 'pages/reviews.php',
+    '/privacy-policy' => 'pages/privacy-policy.php',
+    '/terms-of-service' => 'pages/terms-of-service.php'
 ];
 
 // Check if route exists

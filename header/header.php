@@ -9,7 +9,9 @@ function getCurrentPageTitle($request) {
         '/dryclean' => 'Dry Cleaning Service - Advance Coin Laundry',
         '/speedqueen' => 'Speed Queen App - Advance Coin Laundry',
         '/contact' => 'Contact Us - Advance Coin Laundry',
-        '/reviews' => 'Customer Reviews - Advance Coin Laundry'
+        '/reviews' => 'Customer Reviews - Advance Coin Laundry',
+        '/privacy-policy' => 'Privacy Policy - Advance Coin Laundry',
+        '/terms-of-service' => 'Terms of Service - Advance Coin Laundry'
     ];
     return isset($titles[$request]) ? $titles[$request] : 'Advance Coin Laundry';
 }
@@ -24,7 +26,9 @@ function getCurrentPageDescription($request) {
         '/dryclean' => 'Quality dry cleaning services at Advance Coin Laundry in Orlando. Expert care for your delicate garments and professional attire.',
         '/speedqueen' => 'Download the Speed Queen app to pay for your laundry with your phone and get notifications when your cycle is complete.',
         '/contact' => 'Contact Advance Coin Laundry in Orlando for questions about our services, hours, or to schedule wash & fold pickup.',
-        '/reviews' => 'Read customer reviews and testimonials about Advance Coin Laundry\'s exceptional service and clean facilities in Orlando.'
+        '/reviews' => 'Read customer reviews and testimonials about Advance Coin Laundry\'s exceptional service and clean facilities in Orlando.',
+        '/privacy-policy' => 'Privacy Policy for Advance Coin Laundry. Learn how we collect, use, and protect your information.',
+        '/terms-of-service' => 'Terms of Service for Advance Coin Laundry. Read our terms and conditions for using our website and services.'
     ];
     return isset($descriptions[$request]) ? $descriptions[$request] : 'Orlando\'s premier laundromat with modern equipment and excellent service.';
 }
