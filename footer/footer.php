@@ -16,6 +16,12 @@
                     <li>
                         <a class="link2" href="/contact">CONTACT</a>
                     </li>
+                    <li>
+                        <a class="link2" href="/privacy-policy">PRIVACY POLICY</a>
+                    </li>
+                    <li>
+                        <a class="link2" href="/terms-of-service">TERMS OF SERVICE</a>
+                    </li>
                 </ul>
             </div>
             <div>
@@ -36,11 +42,6 @@
                     <img src="/images/advance_coin_laundry_logo_2.png" alt="Home" />
                 </a>
             </div>
-        </div>
-        <div class="footer-legal">
-            <a class="link2" href="/privacy-policy">Privacy Policy</a>
-            <span class="footer-legal-divider">|</span>
-            <a class="link2" href="/terms-of-service">Terms of Service</a>
         </div>
     </footer>
 
