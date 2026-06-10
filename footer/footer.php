@@ -7,33 +7,34 @@
         <div class="footer-container">
             <div>
                 <ul class="footer-links">
-                    <li>
-                        <a class="link2" href="/about">ABOUT</a>
-                    </li>
+
                     <li>
                         <a class="link2" href="/speedqueen">SPEED QUEEN APP</a>
                     </li>
-                    <li>
-                        <a class="link2" href="/contact">CONTACT</a>
+                                        <li>
+                        <a class="link2" href="/washfold">WASH & FOLD</a>
                     </li>
                     <li>
-                        <a class="link2" href="/privacy-policy">PRIVACY POLICY</a>
-                    </li>
+                        <a class="link2" href="/dryclean">DRY CLEANING</a>
+
                     <li>
-                        <a class="link2" href="/terms-of-service">TERMS OF SERVICE</a>
+                        <a class="link2" href="/coinmachine">COIN-OPERATED MACHINES</a>
                     </li>
                 </ul>
             </div>
             <div>
                 <ul class="footer-links">
                     <li>
-                        <a class="link2" href="/coinmachine">COIN-OPERATED MACHINES</a>
+                        <a class="link2" href="/about">ABOUT</a>
+                    </li>
+                    </li>
+                        <a class="link2" href="/contact">CONTACT</a>
+                    </li>
+                                        <li>
+                        <a class="link2" href="/privacy-policy">PRIVACY POLICY</a>
                     </li>
                     <li>
-                        <a class="link2" href="/washfold">WASH & FOLD</a>
-                    </li>
-                    <li>
-                        <a class="link2" href="/dryclean">DRY CLEANING</a>
+                        <a class="link2" href="/terms-of-service">TERMS OF SERVICE</a>
                     </li>
                 </ul>
             </div>
