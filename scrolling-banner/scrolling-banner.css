@@ -1,3 +1,29 @@
+.announcement-banner {
+  background-color: #9fccd2;
+  color: #1a1a1a;
+  text-align: center;
+  padding: 12px 20px;
+  font-family: "Permanent Marker";
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.4;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .announcement-banner {
+    font-size: 1.1rem;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .announcement-banner {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+  }
+}
+
 .scrolling-banner {
   background-image: url(/images/bubbles7.png);
   background-blend-mode: overlay;
