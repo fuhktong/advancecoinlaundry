@@ -1,3 +1,5 @@
 git add .
 git commit -m "Manual GitHub Actions deployment"
 git push origin main
+
+lftp -u 'u767733958,i2+U!!OVEKAj^4J/' -p 21 ftp://194.164.64.128 -e "set ssl:verify-certificate no; mirror -R --verbose --exclude '\.git/' --exclude '\.github/' --exclude '\.vscode/' --exclude '\.claude/' --exclude 'node_modules/' --exclude '\.env' --exclude '\.DS_Store' --exclude '\.gitignore' --exclude 'deploycode\.txt' ./ /public_html ; bye"

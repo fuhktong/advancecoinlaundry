@@ -2,7 +2,8 @@
 function renderScrollingBanner() {
 ?>
     <div class="announcement-banner">
-        We will be closed Thursday, July 3rd at 4PM for an Employee Appreciation Event. Thank you for your understanding!
+        We will be closed Thursday, July 3rd at 4PM for an Employee </br>
+        Appreciation Event. Thank you for your understanding!
     </div>
     <div class="scrolling-banner">
         <div class="banner-content">

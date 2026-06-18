@@ -15,6 +15,7 @@
 .DS_Store
 .env*
 deploycode.txt
+.vscode/sftp.json
 
 npm-debug.log*
 yarn-debug.log*
