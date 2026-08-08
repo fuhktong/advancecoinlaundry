@@ -3,4 +3,4 @@ git commit -m "Manual deployment"
 git pull origin main --no-rebase --no-edit
 git push origin HEAD:main
 
-lftp -u 'u767733958,i2+U!!OVEKAj^4J/' -p 21 ftp://194.164.64.128 -e "set ssl:verify-certificate no; mirror -R --verbose --exclude '\.git/' --exclude '\.github/' --exclude '\.vscode/' --exclude '\.claude/' --exclude 'node_modules/' --exclude '\.env' --exclude '\.DS_Store' --exclude '\.gitignore' --exclude 'deploycode\.txt' ./ /public_html ; bye"
+lftp -u 'u767733958,i2+U!!OVEKAj^4J/' -p 21 ftp://194.164.64.128 -e "set ssl:verify-certificate no; set ftp:ssl-force true; set ftp:ssl-protect-data true; set ftp:ignore-pasv-address true; set net:timeout 15; set net:max-retries 2; mirror -R --verbose --exclude '\.git/' --exclude '\.github/' --exclude '\.vscode/' --exclude '\.claude/' --exclude 'node_modules/' --exclude '\.env' --exclude '\.DS_Store' --exclude '\.gitignore' --exclude 'deploycode\.txt' ./ /public_html ; bye"

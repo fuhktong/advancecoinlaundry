@@ -1,10 +1,10 @@
 <?php
 function renderScrollingBanner() {
 ?>
-    <div class="announcement-banner">
+    <!-- <div class="announcement-banner">
         AdvanceCoin Laundry will open at noon on Thursday, August 6 and </br>
         Friday, August 7 due to scheduled maintenance. Thank you for your patience.
-    </div>
+    </div> -->
     <div class="scrolling-banner">
         <div class="banner-content">
             <a href="https://maps.app.goo.gl/SGT55qugeUi77bAr5" 
